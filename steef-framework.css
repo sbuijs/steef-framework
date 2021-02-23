@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root{
+    --button-font-size: larger;
+    --purple: #7400b8ff;
+    --french-violet: #6930c3ff;
+    --slate-blue: #5e60ceff;
+    --tufts-blue: #5390d9ff;
+    --blue-jeans: #4ea8deff;
+    --vivid-sky-blue: #48bfe3ff;
+    --sky-blue-crayola: #56cfe1ff;
+    --medium-turquoise: #64dfdfff;
+    --turquoise: #72efddff;
+    --aquamarine: #80ffdbff;
+
+    --color-primary-dark: #000;
+    --color-gray: rgb(131, 131, 131);
+    --color-primary-light: #fff;
+}
+
+
+html {
+    /* font-size: 62.5%;  */
+    /* 1rem = 10px, 10px/16px = 62,5% */
+}
+
+
+
+
+/* ---- Buttons -----------------   */
+button{
+    border: none;
+    padding: 1rem;
+    border-radius: 0px 5px 5px 5px;
+    font-size: var(--button-font-size);
+    color: var(--color--primary-light);
+    cursor: pointer;
+}
+
+.button:disabled,
+  .button.disabled,
+    .button.disabled:hover  {
+      background-color: gray;
+  }
+
+  /* ---- Primary button -----------------   */
+.button-primary{
+    background-color: var(--purple);
+}
+
+.button-primary:hover {
+    background-color: var(--french-violet);
+  }
+
+.button-primary:focus {
+  }
+
+/* ---- Secondary button -----------------   */
+.button-secondary{
+ background-color: var(--slate-blue);
+}
+
+
+.button-secondary:hover {
+    background-color: var(--tufts-blue);
+}
+
+
+
+  /* ---- Link -----------------   */
+.link{
+    font-size: inherit;
+    color: var(--color-primary-dark);
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid var(--color-gray);
+}
+.link:disabled,
+  .link.disabled,
+    .link.disabled:hover  {
+      color: var(--color-gray);
+}
+
+.link:hover{
+    color: var(--slate-blue);
+    border-bottom: 1px solid var(--slate-blue);
+}

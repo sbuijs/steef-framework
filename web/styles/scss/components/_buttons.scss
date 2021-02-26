@@ -1,5 +1,6 @@
 /* ---- Buttons -----------------   */
 button {
+    display: inline-block;
     border: none;
     padding: 1rem;
     border-radius: 0px 5px 5px 5px;
@@ -12,6 +13,7 @@ button {
 .button.disabled,
 .button.disabled:hover {
     background-color: $color-gray;
+    cursor: auto;
 }
 
 /* ---- Primary button -----------------   */
@@ -28,11 +30,11 @@ button {
 
 /* ---- Secondary button -----------------   */
 .button-secondary {
-    background-color: $color-slate-blue;
+    background-color: $color-tufts-blue;
 }
 
 .button-secondary:hover {
-    background-color: $color-tufts-blue;
+    background-color: $color-slate-blue;
 }
 
 /* ---- Link -----------------   */

@@ -12,8 +12,8 @@
           box-sizing: inherit;
 }
 
-html {
-  /* font-size: 62.5%;  */
+:root {
+  font-size: 62.5%;
   /* 1rem = 10px, 10px/16px = 62,5% */
 }
 
@@ -49,6 +49,7 @@ html {
 
 /* ---- Buttons -----------------   */
 button {
+  display: inline-block;
   border: none;
   padding: 1rem;
   border-radius: 0px 5px 5px 5px;
@@ -61,6 +62,7 @@ button {
 .button.disabled,
 .button.disabled:hover {
   background-color: #838383;
+  cursor: auto;
 }
 
 /* ---- Primary button -----------------   */
@@ -74,11 +76,11 @@ button {
 
 /* ---- Secondary button -----------------   */
 .button-secondary {
-  background-color: #5e60ceff;
+  background-color: #5390d9ff;
 }
 
 .button-secondary:hover {
-  background-color: #5390d9ff;
+  background-color: #5e60ceff;
 }
 
 /* ---- Link -----------------   */

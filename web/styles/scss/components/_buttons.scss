@@ -1,5 +1,9 @@
 /* ---- Buttons -----------------   */
-button {
+
+.button-primary,
+.button-secondary {
+    white-space: nowrap;
+    width: fit-content;
     display: inline-block;
     border: none;
     padding: 1rem;
@@ -67,8 +71,4 @@ button {
 .link:hover {
     color: $color-slate-blue;
     border-bottom: 1px solid $color-slate-blue;
-}
-
-.row {
-    margin-bottom: 1rem;
 }

@@ -151,7 +151,12 @@ q,
 }
 
 /* ---- Buttons -----------------   */
-button {
+.button-primary,
+.button-secondary {
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: inline-block;
   border: none;
   padding: 1rem;
@@ -220,14 +225,10 @@ button {
   border-bottom: 1px solid #5e60ceff;
 }
 
-.row {
-  margin-bottom: 1rem;
-}
-
 .styleguide-section {
   background-color: #fff;
 }
 
 .styleguide-section__title {
-  background-color: pink;
+  background-color: #64dfdfff;
 }

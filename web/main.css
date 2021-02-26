@@ -42,6 +42,7 @@ h6,
 .h6 {
   font-family: "Roboto Slab", serif;
   color: #000;
+  padding-bottom: 1rem;
 }
 
 h1,
@@ -96,6 +97,7 @@ p,
   font-weight: 400;
   font-style: normal;
   color: #000;
+  padding-bottom: 1rem;
 }
 
 p.bold,
@@ -118,6 +120,14 @@ q,
   font-weight: 400;
   font-style: italic;
   color: #000;
+  padding-bottom: 1rem;
+}
+
+.container {
+  background-color: violet;
+  width: 90%;
+  max-width: 200rem;
+  margin: 0 auto;
 }
 
 .col-1-of-5 {
@@ -210,6 +220,7 @@ q,
   background-color: transparent;
   cursor: pointer;
   border-bottom: 1px solid #838383;
+  text-decoration: none;
 }
 
 .link:disabled,

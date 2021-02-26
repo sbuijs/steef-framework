@@ -1,0 +1,59 @@
+/* ---- Buttons -----------------   */
+button {
+    border: none;
+    padding: 1rem;
+    border-radius: 0px 5px 5px 5px;
+    font-size: var(--button-font-size);
+    color: $color-white;
+    cursor: pointer;
+}
+
+.button:disabled,
+.button.disabled,
+.button.disabled:hover {
+    background-color: $color-gray;
+}
+
+/* ---- Primary button -----------------   */
+.button-primary {
+    background-color: $color-purple;
+}
+
+.button-primary:hover {
+    background-color: $color-french-violet;
+}
+
+.button-primary:focus {
+}
+
+/* ---- Secondary button -----------------   */
+.button-secondary {
+    background-color: $color-slate-blue;
+}
+
+.button-secondary:hover {
+    background-color: $color-tufts-blue;
+}
+
+/* ---- Link -----------------   */
+.link {
+    font-size: inherit;
+    color: $color-black;
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid $color-gray;
+}
+.link:disabled,
+.link.disabled,
+.link.disabled:hover {
+    color: $color-gray;
+}
+
+.link:hover {
+    color: $color-slate-blue;
+    border-bottom: 1px solid $color-slate-blue;
+}
+
+.row {
+    margin-bottom: 1rem;
+}

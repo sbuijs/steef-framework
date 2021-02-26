@@ -12,8 +12,8 @@
           box-sizing: inherit;
 }
 
-html {
-  /* font-size: 62.5%;  */
+:root {
+  font-size: 62.5%;
   /* 1rem = 10px, 10px/16px = 62,5% */
 }
 
@@ -151,19 +151,32 @@ q,
 }
 
 /* ---- Buttons -----------------   */
-button {
+.button-primary,
+.button-secondary {
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
   border: none;
   padding: 1rem;
-  border-radius: 0px 5px 5px 5px;
+  border-radius: 0px 10px 10px 10px;
+  border: 1px solid transparent;
   font-size: var(--button-font-size);
   color: #fff;
   cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .button:disabled,
 .button.disabled,
 .button.disabled:hover {
   background-color: #838383;
+  border: 1px solid #838383;
+  border-radius: 10px 10px 0px 10px;
+  color: #fff;
+  cursor: default;
 }
 
 /* ---- Primary button -----------------   */
@@ -172,16 +185,22 @@ button {
 }
 
 .button-primary:hover {
-  background-color: #6930c3ff;
+  background-color: transparent;
+  border: 1px solid #6930c3ff;
+  border-radius: 10px 10px 0px 10px;
+  color: #6930c3ff;
 }
 
 /* ---- Secondary button -----------------   */
 .button-secondary {
-  background-color: #5e60ceff;
+  background-color: #5390d9ff;
 }
 
 .button-secondary:hover {
-  background-color: #5390d9ff;
+  background-color: transparent;
+  border: 1px solid #5e60ceff;
+  border-radius: 10px 10px 0px 10px;
+  color: #5e60ceff;
 }
 
 /* ---- Link -----------------   */
@@ -197,6 +216,8 @@ button {
 .link.disabled,
 .link.disabled:hover {
   color: #838383;
+  border-bottom: 1px solid #838383;
+  cursor: default;
 }
 
 .link:hover {
@@ -204,14 +225,10 @@ button {
   border-bottom: 1px solid #5e60ceff;
 }
 
-.row {
-  margin-bottom: 1rem;
-}
-
 .styleguide-section {
   background-color: #fff;
 }
 
 .styleguide-section__title {
-  background-color: pink;
+  background-color: #64dfdfff;
 }

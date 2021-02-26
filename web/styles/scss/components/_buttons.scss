@@ -1,17 +1,28 @@
 /* ---- Buttons -----------------   */
-button {
+
+.button-primary,
+.button-secondary {
+    white-space: nowrap;
+    width: fit-content;
+    display: inline-block;
     border: none;
     padding: 1rem;
-    border-radius: 0px 5px 5px 5px;
+    border-radius: 0px 10px 10px 10px;
+    border: 1px solid transparent;
     font-size: var(--button-font-size);
     color: $color-white;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .button:disabled,
 .button.disabled,
 .button.disabled:hover {
     background-color: $color-gray;
+    border: 1px solid $color-gray;
+    border-radius: 10px 10px 0px 10px;
+    color: $color-white;
+    cursor: default;
 }
 
 /* ---- Primary button -----------------   */
@@ -20,7 +31,10 @@ button {
 }
 
 .button-primary:hover {
-    background-color: $color-french-violet;
+    background-color: transparent;
+    border: 1px solid $color-french-violet;
+    border-radius: 10px 10px 0px 10px;
+    color: $color-french-violet;
 }
 
 .button-primary:focus {
@@ -28,11 +42,14 @@ button {
 
 /* ---- Secondary button -----------------   */
 .button-secondary {
-    background-color: $color-slate-blue;
+    background-color: $color-tufts-blue;
 }
 
 .button-secondary:hover {
-    background-color: $color-tufts-blue;
+    background-color: transparent;
+    border: 1px solid $color-slate-blue;
+    border-radius: 10px 10px 0px 10px;
+    color: $color-slate-blue;
 }
 
 /* ---- Link -----------------   */
@@ -47,13 +64,11 @@ button {
 .link.disabled,
 .link.disabled:hover {
     color: $color-gray;
+    border-bottom: 1px solid $color-gray;
+    cursor: default;
 }
 
 .link:hover {
     color: $color-slate-blue;
     border-bottom: 1px solid $color-slate-blue;
-}
-
-.row {
-    margin-bottom: 1rem;
 }

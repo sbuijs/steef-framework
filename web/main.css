@@ -17,6 +17,109 @@
   /* 1rem = 10px, 10px/16px = 62,5% */
 }
 
+html {
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Roboto Slab", serif;
+  color: #000;
+}
+
+h1,
+.h1 {
+  font-size: 5.5rem;
+  line-height: 6rem;
+  font-weight: 400;
+}
+
+h2,
+.h2 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-weight: 100;
+}
+
+h3,
+.h3 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+h4,
+.h4 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+h5,
+.h5 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+h6,
+.h6 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p,
+.p {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
+
+p.bold,
+.p.bold {
+  font-weight: 600;
+  font-style: semi-bold;
+}
+
+p.italic,
+.p.italic {
+  font-style: italic;
+}
+
+q,
+.q {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #000;
+}
+
 .col-1-of-5 {
   width: calc((100%) / 5);
   border: 1px solid #838383;
@@ -52,17 +155,23 @@ button {
   display: inline-block;
   border: none;
   padding: 1rem;
-  border-radius: 0px 5px 5px 5px;
+  border-radius: 0px 10px 10px 10px;
+  border: 1px solid transparent;
   font-size: var(--button-font-size);
   color: #fff;
   cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .button:disabled,
 .button.disabled,
 .button.disabled:hover {
   background-color: #838383;
-  cursor: auto;
+  border: 1px solid #838383;
+  border-radius: 10px 10px 0px 10px;
+  color: #fff;
+  cursor: default;
 }
 
 /* ---- Primary button -----------------   */
@@ -71,7 +180,10 @@ button {
 }
 
 .button-primary:hover {
-  background-color: #6930c3ff;
+  background-color: transparent;
+  border: 1px solid #6930c3ff;
+  border-radius: 10px 10px 0px 10px;
+  color: #6930c3ff;
 }
 
 /* ---- Secondary button -----------------   */
@@ -80,7 +192,10 @@ button {
 }
 
 .button-secondary:hover {
-  background-color: #5e60ceff;
+  background-color: transparent;
+  border: 1px solid #5e60ceff;
+  border-radius: 10px 10px 0px 10px;
+  color: #5e60ceff;
 }
 
 /* ---- Link -----------------   */
@@ -96,6 +211,8 @@ button {
 .link.disabled,
 .link.disabled:hover {
   color: #838383;
+  border-bottom: 1px solid #838383;
+  cursor: default;
 }
 
 .link:hover {
@@ -105,4 +222,12 @@ button {
 
 .row {
   margin-bottom: 1rem;
+}
+
+.styleguide-section {
+  background-color: #fff;
+}
+
+.styleguide-section__title {
+  background-color: pink;
 }

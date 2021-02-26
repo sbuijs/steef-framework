@@ -17,6 +17,14 @@ html {
   /* 1rem = 10px, 10px/16px = 62,5% */
 }
 
+.container {
+  max-width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .col-1-of-5 {
   width: calc((100%) / 5);
   border: 1px solid #838383;

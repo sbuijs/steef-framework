@@ -1,0 +1,32 @@
+.hero {
+    padding-bottom: 80px;
+    margin: 0 auto;
+    height: 50vh;
+    position: relative;
+    background-image: url(https://picsum.photos/id/1081/1200/500);
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 5rem;
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    &__title {
+        padding-bottom: 2rem;
+    }
+    &__subtitle {
+        padding-bottom: 5rem;
+    }
+
+    &__cta {
+        &__button {
+            &.button:hover {
+                background-color: white;
+            }
+        }
+    }
+}

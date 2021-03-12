@@ -1,26 +1,30 @@
-.col-1-of-5 {
-    width: calc((100%) / 5);
-    border: 1px solid $color-gray;
-    background-color: $color-white;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-.col-2-of-5 {
-    width: calc(((100%) / 5) * 2);
-    border: 1px solid $color-gray;
-    background-color: $color-white;
+// ----------------------------------------------  The grid ---------------------------------------------------
+
+$columns: 12;
+$gutter-width: 0.8rem;
+
+//define the width of the gutter
+$gutter-padding: $gutter-width/2;
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        flex: 0 0 100% / $columns * $i;
+        // background-color: pink;
+        padding: $gutter-width;
+    }
+
+    .col-offset-#{$i} {
+        margin-left: 100% / $columns * $i;
+    }
 }
-.col-3-of-5 {
-    width: calc(((100%) / 5) * 3);
-    border: 1px solid $color-gray;
-    background-color: $color-white;
-}
-.col-4-of-5 {
-    width: calc(((100%) / 5) * 4);
-    border: 1px solid $color-gray;
-    background-color: $color-white;
-}
-.col-5-of-5 {
-    width: calc(((100%) / 5) * 5);
-    border: 1px solid $color-gray;
-    background-color: $color-white;
+p {
+    // background-color: powderblue;
 }

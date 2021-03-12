@@ -14,10 +14,17 @@ $gutter-width: 0.8rem;
 //define the width of the gutter
 $gutter-padding: $gutter-width/2;
 
+//show contours of the grid
+.show-grid {
+    div[class^="col-"] {
+        border: 1px solid white;
+        background-color: $color-aquamarine;
+    }
+}
+
 @for $i from 1 through $columns {
     .col-#{$i} {
         flex: 0 0 100% / $columns * $i;
-        // background-color: pink;
         padding: $gutter-width;
     }
 

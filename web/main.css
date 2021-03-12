@@ -50,6 +50,7 @@ h1,
   font-size: 5.5rem;
   line-height: 6rem;
   font-weight: 400;
+  padding-bottom: 3rem;
 }
 
 h2,
@@ -57,6 +58,7 @@ h2,
   font-size: 3.5rem;
   line-height: 4rem;
   font-weight: 100;
+  padding-bottom: 2rem;
 }
 
 h3,
@@ -141,6 +143,11 @@ q,
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.show-grid div[class^="col-"] {
+  border: 1px solid white;
+  background-color: #80ffdbff;
 }
 
 .col-1 {
@@ -295,10 +302,6 @@ q,
   text-align: center;
 }
 
-.hero__title {
-  padding-bottom: 2rem;
-}
-
 .hero__subtitle {
   padding-bottom: 5rem;
 }
@@ -389,4 +392,13 @@ q,
 
 .styleguide-section__title {
   background-color: #64dfdfff;
+}
+
+.image-round {
+  border-radius: 50%;
+}
+
+.image-fluid {
+  max-width: 100%;
+  height: auto;
 }

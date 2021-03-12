@@ -127,6 +127,7 @@ q,
   padding-bottom: 80px;
   background-color: lightgray;
   width: calc(100% - 5%);
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -136,7 +137,6 @@ q,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 30px;
 }
 
 .col-1 {
@@ -144,6 +144,8 @@ q,
       -ms-flex: 0 0 8.33333%;
           flex: 0 0 8.33333%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-1 {
@@ -155,6 +157,8 @@ q,
       -ms-flex: 0 0 16.66667%;
           flex: 0 0 16.66667%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-2 {
@@ -166,6 +170,8 @@ q,
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-3 {
@@ -177,6 +183,8 @@ q,
       -ms-flex: 0 0 33.33333%;
           flex: 0 0 33.33333%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-4 {
@@ -188,6 +196,8 @@ q,
       -ms-flex: 0 0 41.66667%;
           flex: 0 0 41.66667%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-5 {
@@ -199,6 +209,8 @@ q,
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-6 {
@@ -210,6 +222,8 @@ q,
       -ms-flex: 0 0 58.33333%;
           flex: 0 0 58.33333%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-7 {
@@ -221,6 +235,8 @@ q,
       -ms-flex: 0 0 66.66667%;
           flex: 0 0 66.66667%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-8 {
@@ -232,6 +248,8 @@ q,
       -ms-flex: 0 0 75%;
           flex: 0 0 75%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-9 {
@@ -243,6 +261,8 @@ q,
       -ms-flex: 0 0 83.33333%;
           flex: 0 0 83.33333%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-10 {
@@ -254,6 +274,8 @@ q,
       -ms-flex: 0 0 91.66667%;
           flex: 0 0 91.66667%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-11 {
@@ -265,6 +287,8 @@ q,
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-offset-12 {

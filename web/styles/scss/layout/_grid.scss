@@ -2,12 +2,16 @@
     padding-bottom: 80px;
     background-color: lightgray;
     width: calc(100% - 5%);
+    max-width: 1200px;
     margin: 0 auto;
 }
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    // padding-bottom: 30px;
+    // grid-row-gap: 10px;
+    // grid-column-gap: 10px;
+    // grid-gap: 10px;
 }
 
 $columns: 12;
@@ -16,8 +20,8 @@ $columns: 12;
     .col-#{$i} {
         flex: 0 0 100% / $columns * $i;
         background-color: $color-white;
-        // margin-left: $margin-left;
-        // margin-right: $margin-right;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .col-offset-#{$i} {

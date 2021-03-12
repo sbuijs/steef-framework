@@ -5,23 +5,27 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    // padding-bottom: 30px;
-    // grid-row-gap: 10px;
-    // grid-column-gap: 10px;
-    // grid-gap: 10px;
+    width: 100%;
+    max-width: 100%;
 }
 
 $columns: 12;
+$gutter: 15px;
 
 @for $i from 1 through $columns {
     .col-#{$i} {
         flex: 0 0 100% / $columns * $i;
         background-color: $color-white;
-        padding-left: 15px;
-        padding-right: 15px;
+
+        //Create the gutter
+        margin-right: -$gutter;
+        margin-left: -$gutter;
+        padding-right: $gutter;
+        padding-left: $gutter;
     }
 
     .col-offset-#{$i} {

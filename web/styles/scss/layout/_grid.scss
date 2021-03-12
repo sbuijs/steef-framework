@@ -11,24 +11,28 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
+    box-sizing: border-box;
 }
 
+// ----------------------------------------------  The grid ---------------------------------------------------
+
 $columns: 12;
-$gutter: 15px;
+$gutter-width: 0.8rem;
+
+//define the width of the gutter
+$gutter-padding: $gutter-width/2;
 
 @for $i from 1 through $columns {
     .col-#{$i} {
         flex: 0 0 100% / $columns * $i;
-        background-color: $color-white;
-
-        //Create the gutter
-        margin-right: -$gutter;
-        margin-left: -$gutter;
-        padding-right: $gutter;
-        padding-left: $gutter;
+        // background-color: pink;
+        padding: $gutter-width;
     }
 
     .col-offset-#{$i} {
         margin-left: 100% / $columns * $i;
     }
+}
+p {
+    // background-color: powderblue;
 }

@@ -1,3 +1,10 @@
+.image-round {
+  border-radius: 50%; }
+
+.image-fluid {
+  max-width: 100%;
+  height: auto; }
+
 * {
   margin: 0;
   padding: 0;
@@ -208,7 +215,7 @@ q,
   margin-left: 100%; }
 
 .hero {
-  padding-bottom: 80px;
+  padding-bottom: 25rem;
   margin: 0 auto;
   height: 50vh;
   position: relative;
@@ -295,10 +302,3 @@ q,
   background-color: #fff; }
   .styleguide-section__title {
     background-color: #64dfdfff; }
-
-.image-round {
-  border-radius: 50%; }
-
-.image-fluid {
-  max-width: 100%;
-  height: auto; }

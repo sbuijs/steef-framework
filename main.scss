@@ -2,6 +2,13 @@
 
 // abstracts
 
+// utils
+@import "web/styles/scss/utils/variables";
+@import "web/styles/scss/utils/functions";
+@import "web/styles/scss/utils/mixins";
+@import "web/styles/scss/utils/helpers";
+@import "web/styles/scss/utils/images";
+
 // base
 @import "web/styles/scss/base/reset";
 @import "web/styles/scss/base/colors";
@@ -32,10 +39,3 @@
 @import "web/styles/scss/themes/theme";
 
 // styleguide
-
-// utils
-@import "web/styles/scss/utils/variables";
-@import "web/styles/scss/utils/functions";
-@import "web/styles/scss/utils/mixins";
-@import "web/styles/scss/utils/helpers";
-@import "web/styles/scss/utils/images";

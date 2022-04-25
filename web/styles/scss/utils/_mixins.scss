@@ -1,0 +1,10 @@
+//mixins to calx px to rem
+//source: https://dev.to/nikolab/convert-px-to-rem-using-sass-3-methods-4ep2
+@mixin toRem($property, $value) {
+    #{$property}: ($value / 16) + rem;
+}
+
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;
+    @return $remValue;
+}

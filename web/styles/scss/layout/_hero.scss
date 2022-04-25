@@ -1,11 +1,13 @@
 .hero {
-    padding-bottom: 80px;
+    // @include toRem(padding-bottom, 400);
+    padding-bottom: toRem(400);
     margin: 0 auto;
     height: 50vh;
     position: relative;
     background-image: url(https://picsum.photos/id/1081/1200/500);
     background-size: cover;
     width: 100%;
+
     margin-bottom: 5rem;
 
     &__content {
